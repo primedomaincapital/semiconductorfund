@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Chips vs. Legacy Chips: Where Returns Are Hiding | SemiconductorFund.com</title>
+<meta name="description" content="AI semiconductors will be ~30% of chip revenue in 2026. Legacy chips are the forgotten 70%. Where the real returns are hiding in the great chip bifurcation.">
+<meta property="og:title" content="AI Chips vs. Legacy Chips: Where Returns Are Hiding | SemiconductorFund.com">
+<meta property="og:description" content="AI semiconductors will be ~30% of chip revenue in 2026. Legacy chips are the forgotten 70%. Where the real returns are hiding in the great chip bifurcation.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="../images/photo5.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "AI Chips vs. Legacy Chips: Where Returns Are Hiding",
+ "description": "AI semiconductors will be ~30% of chip revenue in 2026. Legacy chips are the forgotten 70%. Where the real returns are hiding in the great chip bifurcation.",
+ "keywords": "AI chips vs legacy chips",
+ "author": {
+  "@type": "Organization",
+  "name": "Prime Domain Capital"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Prime Domain Capital"
+ }
+}
+</script>
+<style>
+:root{--bg:#f2f4f7;--panel:#ffffff;--ink:#0c1220;--chip:#1d4ed8;--chip-dk:#12307e;--copper:#b87333;--mut:#5a6a85;--line:#dde3ec}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Space Grotesk',sans-serif;line-height:1.7;overflow-x:hidden}
+.mono{font-family:'IBM Plex Mono',monospace}
+#circuit{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 44px;background:rgba(242,244,247,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .brand{font-weight:700;font-size:12px;letter-spacing:.3em;text-transform:uppercase}
+nav .brand i{font-style:normal;color:var(--chip)}
+nav .brand a{color:inherit;text-decoration:none}
+nav .price{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--mut)}
+nav .price b{color:var(--chip)}
+nav .price a{color:inherit;text-decoration:none}
+.art{position:relative;z-index:1;max-width:1240px;margin:0 auto;padding:150px 44px 10px}
+.crumb{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--mut);margin-bottom:30px}
+.crumb a{color:var(--chip);text-decoration:none;font-weight:600}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--chip);margin-bottom:18px}
+.art h1{font-size:clamp(36px,5vw,66px);font-weight:700;line-height:1.06;letter-spacing:-.03em;max-width:22ch}
+.art h1 .b{color:var(--chip)}
+.art .lede{margin:22px 0 6px;max-width:62ch;font-size:18px;color:var(--mut);font-weight:300}
+.art .meta{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);margin-top:16px}
+.art-fig{position:relative;z-index:1;max-width:1240px;margin:0 auto;padding:44px 44px 0}
+.art-fig img{width:100%;height:380px;object-fit:cover}
+.art-fig .cap{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--mut);margin-top:12px;text-align:center}
+.art-body{position:relative;z-index:1;max-width:840px;margin:0 auto;padding:50px 44px 80px}
+.art-body p{font-size:17px;color:var(--mut);margin-bottom:22px;font-weight:300;line-height:1.8}
+.art-body p strong{color:var(--ink);font-weight:600}
+.art-body h3{font-size:clamp(24px,3vw,34px);font-weight:700;letter-spacing:-.02em;line-height:1.15;margin:54px 0 20px;color:var(--ink)}
+.art-body blockquote.pq{border-left:4px solid var(--chip);margin:46px 0;padding:6px 0 6px 30px}
+.art-body blockquote.pq p{font-size:clamp(20px,2.4vw,27px);font-weight:500;color:var(--ink);line-height:1.42;margin:0}
+.art-body .signoff{border-top:1px solid var(--line);padding-top:28px;margin-top:54px;font-size:16px;color:var(--mut)}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.card{background:var(--panel);border:1px solid var(--line);padding:40px 32px;transition:.3s;border-top:3px solid var(--chip);display:flex;flex-direction:column}
+.card:nth-child(2){border-top-color:var(--copper)}
+.card:nth-child(3){border-top-color:var(--ink)}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(29,78,216,.1)}
+.card .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.24em;color:var(--chip)}
+.card h3{font-size:20px;font-weight:600;margin:12px 0 10px}
+.card p{font-size:15px;color:var(--mut);flex:1}
+.card .rlink{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--chip);text-decoration:none;font-weight:600;margin-top:18px;display:inline-block}
+.card .rlink:hover{text-decoration:underline}
+section{position:relative;z-index:1;max-width:1240px;margin:0 auto;padding:90px 44px}
+h2{font-size:clamp(30px,4.2vw,52px);font-weight:700;letter-spacing:-.02em;line-height:1.12;margin-bottom:26px}
+.cta{position:relative;z-index:1;background:var(--ink);color:#fff;text-align:center;padding:120px 44px;overflow:hidden}
+.cta .bgc{position:absolute;inset:0;opacity:.2}
+.cta h2{color:#fff;max-width:22ch;margin:0 auto 20px}
+.cta .price{font-size:clamp(52px,6.5vw,84px);font-weight:700;letter-spacing:-.02em;margin-bottom:32px}
+.cta .price span{color:var(--chip);filter:brightness(1.6)}
+.btn{display:inline-block;padding:16px 38px;background:var(--chip);color:#fff;text-decoration:none;font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;transition:.3s;border:1px solid var(--chip)}
+.btn:hover{background:var(--chip-dk);border-color:var(--chip-dk)}
+footer{position:relative;z-index:1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;max-width:1240px;margin:0 auto;padding:34px 44px;font-size:13px;color:var(--mut)}
+footer a{color:var(--chip);text-decoration:none;font-weight:600}
+@media(max-width:900px){nav,.art,section,.art-fig,.art-body{padding-left:22px;padding-right:22px}.trio{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.trio{grid-template-columns:1fr}}
+</style>
+</head><body>
+<canvas id="circuit"></canvas>
+<nav>
+  <div class="brand"><a href="../index.html">Prime Domain <i>Capital</i></a></div>
+  <div class="price"><a href="https://www.afternic.com/domain/semiconductorfund.com">BUY NOW &nbsp;<b>$16,888</b></a></div>
+</nav>
+<header class="art">
+  <div class="crumb"><a href="../index.html">&larr; Back to semiconductorfund.com</a></div>
+  <div class="kicker">Insights &middot; Market Structure</div>
+  <h1>AI Chips vs. Legacy Chips: Where Returns Are Hiding</h1>
+  <p class="lede">AI semiconductors will be ~30% of chip revenue in 2026. Legacy chips are the forgotten 70%. Where the real returns are hiding in the great chip bifurcation.</p>
+  <div class="meta">Prime Domain Capital &middot; Market Intelligence</div>
+</header>
+<div class="art-fig"><img src="../images/photo5.jpg" alt="Chip macro detail"><div class="cap">AI vs. legacy &middot; the bifurcation</div></div>
+<article class="art-body">
+<p>The semiconductor market has split in two, and the split is the investment story. On one side: AI semiconductors, forecast at roughly 30% of the industry&#x27;s $1.3 trillion-plus revenue in 2026, growing at a pace the industry has not seen in twenty years. On the other: everything else — automotive, industrial, consumer, the mature-node chips that run the physical world — growing modestly, fighting overcapacity in places, and trading at fractions of the AI names&#x27; multiples. The market has decided this is a simple story: buy the future, ignore the past. Simple stories in semiconductors are usually wrong in interesting ways.</p>
+<p>Start with the AI side, because the numbers demand respect. Hyperscaler AI infrastructure spending is expected to grow more than 50% in 2026, on top of more than $1.1 trillion committed since 2023. The demand flows through a clear chain: GPUs and custom accelerators, high-bandwidth memory (each HBM stack consuming 3–4x the wafer capacity of standard DRAM), advanced packaging to stitch it together (TSMC has committed roughly $10 billion to CoWoS capacity), networking silicon to connect the clusters, and power management to feed them. It is not one product; it is an entire infrastructure stack, which is why Gartner expects non-memory chip revenue to grow 21.9% in 2026 — the AI build-out lifts CPUs, analog, and optical interconnect alongside the headline accelerators. The custom-silicon trend adds a second engine: hyperscalers designing their own chips to cut dependence on merchant suppliers, which shifts value toward the foundries and the design ecosystem.</p>
+<p>The AI trade&#x27;s risks are concentration and duration. Thirty percent of industry revenue tied to the capex plans of four companies is a concentration bet, whatever the growth rate. And the memory analysts&#x27; warning — that memflation destroys or delays non-AI demand into 2028 — cuts both ways: today&#x27;s AI revenue is flattered by the reallocation of industry capacity toward AI, which means some of the growth is borrowed from the future and from other segments.</p>
+<h3>The Forgotten 70%: Legacy&#x27;s Quiet Case</h3>
+<p>Now the side nobody wants to talk about. Legacy and mature-node chips — automotive MCUs, industrial analog, power discretes, the trailing-edge logic running appliances and factories — are priced as if the future has no use for them. In places, that is wrong. Consider the setup: years of underinvestment as capital chased leading edge, automotive electrification structurally increasing chip content per vehicle (an EV carries multiples of the semiconductor value of an internal-combustion car), industrial automation and grid modernization demanding power semiconductors regardless of AI headlines, and defense and aerospace programs locked into mature nodes for reliability and certification reasons. These are not growth stories. They are cash-flow stories trading at cash-flow multiples — and in a market where the AI names trade at 30–60x forward earnings, the bar for the legacy trade is simply lower.</p>
+<p>The honest bear case for legacy deserves equal time. China&#x27;s mature-node capacity build-out is the structural overhang: years of heavy investment in trailing-edge fabs, accelerated by export controls that pushed Chinese capital toward the nodes it can still build, means supply in legacy segments could stay elevated for years. Companies levered to China-exposed mature nodes face a grinding price war, not a cycle. And the bifurcation is real at the equipment level too — ASML&#x27;s China revenue, 42% of its total in the first three quarters of 2025, is falling toward ~20% by end of 2026, and the digestion of that historic buying spree will weigh on trailing-edge tool demand.</p>
+<h3>The Bifurcated Portfolio</h3>
+<p>The sophisticated version of this trade is not &quot;AI versus legacy.&quot; It is a barbell that respects what each side actually is. The AI side is a growth compounder with cycle risk — own the bottlenecks (HBM, advanced packaging, EUV lithography), demand a margin of safety on entry multiples, and treat every capex announcement as both confirmation and a countdown. The legacy side is a value and income trade — own the franchises with pricing power in non-commoditized niches (automotive-qualified analog, power semis for electrification, defense-grade components), avoid the segments where Chinese overcapacity is structural, and collect the cash flows the market is mispricing as terminal decline.</p>
+<p>Here is the line to carry into the investment committee: <em>the market is pricing AI chips as if cycles were abolished and legacy chips as if demand were abolished — and it is wrong about both, in opposite directions.</em> The AI cycle will turn; the question is when, and the memory market&#x27;s history says the turn is always sharper than expected. Legacy demand will persist; the question is which suppliers keep their margins, and the answer favors specialization over scale.</p>
+<p>The returns are hiding where they always hide in semiconductors: in the gap between the narrative and the numbers. Right now that gap runs in both directions. Trade accordingly.</p>
+<p class="signoff"><em>Two chip markets, one disciplined approach. semiconductorfund.com is available for acquisition. Inquiries: info@primedomaincapital.com.</em></p>
+</article>
+<div class="cta">
+  <canvas class="bgc" id="circuit2"></canvas>
+  <div class="kicker reveal" style="color:#8fb0ff">Acquisition</div>
+  <h2 class="reveal">The silicon economy has a name.<br>Take it.</h2>
+  <div class="price reveal"><span>$</span>16,888</div>
+  <div class="reveal"><a class="btn" href="https://www.afternic.com/domain/semiconductorfund.com">Buy Now via Afternic</a></div>
+  <p class="reveal" style="margin-top:26px;font-size:13px;color:#8fa0c0">Escrow.com secure transfer &middot; <a href="mailto:info@primedomaincapital.com" style="color:#fff">info@primedomaincapital.com</a></p>
+</div>
+<footer>
+  <span>Offered by <strong>Prime Domain Capital</strong></span>
+  <span><a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></span>
+</footer>
+<script>
+function makeCircuit(id){const c=document.getElementById(id),x=c.getContext('2d');let W,H;function rs(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight}rs();addEventListener('resize',rs);
+const P=[];for(let i=0;i<26;i++)P.push({x:Math.random()*W,y:Math.random()*H,dx:(Math.random()>.5?1:-1)*(Math.random()*1.2+.4),dy:0,life:Math.random()*200+60});
+(function loop(){x.clearRect(0,0,W,H);for(const p of P){if(Math.random()>.96)p.dy=(Math.random()>.5?1:-1)*(Math.random()*1.2+.4),p.dx=0;else if(Math.random()>.96)p.dx=(Math.random()>.5?1:-1)*(Math.random()*1.2+.4),p.dy=0;
+p.x+=p.dx;p.y+=p.dy;p.life--;if(p.life<0||p.x<0||p.x>W||p.y<0||p.y>H){p.x=Math.random()*W;p.y=Math.random()*H;p.life=Math.random()*200+60}
+x.fillStyle='rgba(29,78,216,.55)';x.fillRect(p.x,p.y,3,3);x.fillStyle='rgba(184,115,51,.3)';x.fillRect(p.x-6,p.y-6,2,2)}requestAnimationFrame(loop)})();}
+makeCircuit('circuit');
+const c2=document.getElementById('circuit2');if(c2){c2.style.position='absolute';c2.style.inset='0';c2.style.width='100%';c2.style.height='100%';makeCircuit('circuit2')}
+const io=new IntersectionObserver(e=>e.forEach(v=>{if(v.isIntersecting){v.target.classList.add('in');io.unobserve(v.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5fb51d1999084c91989809d7608061e0"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
