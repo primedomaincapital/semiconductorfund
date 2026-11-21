@@ -1,0 +1,15 @@
+# SemiconductorFund.com — Own the Chip Cycle
+> The category-defining domain for semiconductor investment funds, chip ETFs, and silicon economy capital.
+> It publishes research on semiconductor funds, chip cycles, and silicon-economy capital.
+> The semiconductorfund.com domain is for sale at $16,888 (Buy Now) via Afternic, secured by Escrow.com.
+
+## Key pages
+- [semiconductorfund.com](https://semiconductorfund.com/)
+- [Market data](https://semiconductorfund.com/market-data)
+- [Semiconductor Investment Thesis 2026: Beyond NVIDIA](https://semiconductorfund.com/insights/article1)
+- [Chip Cycle Investing: Timing the Semiconductor Market](https://semiconductorfund.com/insights/article2)
+- [AI Chips vs. Legacy Chips: Where Returns Are Hiding](https://semiconductorfund.com/insights/article3)
+- [How Long Do Semiconductor Cycles Last? The Downturn Playbook](https://semiconductorfund.com/insights/article8)
+
+## Optional
+- [Sitemap](https://semiconductorfund.com/sitemap.xml)
